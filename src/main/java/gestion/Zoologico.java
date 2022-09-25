@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private ArrayList<Zona> zonas = new ArrayList<Zona>();
+	private ArrayList<Zona> zonas;
 	
 	public Zoologico() {
-		this(null, null);
+		
 	}
 	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
@@ -26,14 +26,13 @@ public class Zoologico {
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
-	public ArrayList<Zona> getZona() {
+	public ArrayList<Zona> getZonas() {
 		return zonas;
 	}
-
 	public void setZonas(ArrayList<Zona> zonas) {
 		this.zonas = zonas;
 	}
-
+	
 	public void agregarZonas(Zona zonaNueva) {
 		zonas.add(zonaNueva);
 	}
