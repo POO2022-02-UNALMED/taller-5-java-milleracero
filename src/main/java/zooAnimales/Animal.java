@@ -13,7 +13,7 @@ public class Animal {
 	private ArrayList<Zona> zona;
 	
 	public Animal() {
-		
+		this(null, 0, null, null);
 	}
 	
 	public Animal(String nombre, int edad, String habitat, String genero) {
